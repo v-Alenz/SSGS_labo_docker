@@ -36,3 +36,5 @@ chmod +x startup.sh;'
 
 ENTRYPOINT [ "/home/node/client_build/startup.sh" ]
 
+
+
