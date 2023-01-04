@@ -22,7 +22,7 @@
 #
 
 DOCKER_USERNAME ?= valenzz
-IMAGE_NAME ?= ssgs_labo_docker
+IMAGE_NAME ?= ssgs_labo_docker_client
 
 build:
 	docker build --tag $(IMAGE_NAME) . 
