@@ -26,3 +26,6 @@ IMAGE_NAME ?= ssgs_labo_docker_client
 
 build:
 	docker build --tag $(IMAGE_NAME) . 
+
+run:	
+	docker run -it -d --name client_ricca_nodejs -p 3000:3000 ssgs_labo_docker_client

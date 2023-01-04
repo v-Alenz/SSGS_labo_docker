@@ -22,11 +22,9 @@
 #
 
 FROM node:19-bullseye
-ADD ./client_build /home/node/client_build
-RUN bin/bash -c 'cd /home/node/client_build &&\
+ADD ./server_build /home/node/server_build
+RUN bin/bash -c 'cd /home/node/server_build &&\
     npm install --loglevel info &&\
-    npm run build  --loglevel info &&\ 
-    npm install -g serve --loglevel info &&\
-    echo -e "#!/bin/bash\nserve -s /home/node/client_build/build" > startup.sh &&\
+    echo -e "#!/bin/bash\nnpm start --prefix /home/node/server_build" > startup.sh &&\
     chmod +x startup.sh'
-ENTRYPOINT [ "/home/node/client_build/startup.sh" ]
+ENTRYPOINT [ "/home/node/server_build/startup.sh" ]
