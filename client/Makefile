@@ -5,7 +5,7 @@
 #   per il corso di SSGS dell'Universiota' degli Studi di Genova 
 #
 #   Copyright (C) <2023>  Andrea Valenzano 4548315
-#   Copyright (C) <2023>  Nicola Incardona DAMETTERE
+#   Copyright (C) <2023>  Nicola Incardona 4750770
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU Affero General Public License as
@@ -20,7 +20,6 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
-
 
 DOCKER_USERNAME ?= valenzz
 IMAGE_NAME ?= ssgs_labo_docker
