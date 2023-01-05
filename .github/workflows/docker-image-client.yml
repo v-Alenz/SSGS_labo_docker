@@ -21,7 +21,6 @@
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-
 name: SSGS Labo Client
 
 on:
@@ -49,7 +48,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: .
-          file: ./client/Dockerfile
+          context: ./client
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ssgs_labo_docker:latest
