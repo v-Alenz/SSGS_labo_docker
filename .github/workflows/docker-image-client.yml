@@ -49,6 +49,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./client
-          file: ./Dockerfile
+          file: ./client/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ssgs_labo_docker:latest
