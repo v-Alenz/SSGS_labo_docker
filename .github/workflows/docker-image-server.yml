@@ -1,5 +1,5 @@
 #
-#   docker-image-client.yml - push the client docker image in dockerhub
+#   docker-image-server.yml - push the server docker image in dockerhub
 # 
 #   Programma sviluppato come parte del progetto su Docker
 #   per il corso di SSGS dell'Universiota' degli Studi di Genova 
@@ -48,7 +48,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: ./client
-          file: ./client/Dockerfile
+          context: ./server
+          file: ./server/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ssgs_labo_docker_client:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ssgs_labo_docker_server:latest
+
