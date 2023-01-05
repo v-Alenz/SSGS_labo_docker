@@ -26,15 +26,13 @@ version: '3'
 services:
 
   ssgs_server:
-    build: ./server
-    image: ssgs_server:latest
+    image: valenzz/ssgs_labo_docker_server:latest
     container_name: ssgs_server
     ports:
       - 4000:4000
 
   ssgs_client:
-    build: ./client
-    image: ssgs_client:latest
+    image: valenzz/ssgs_labo_docker_client:latest
     container_name: ssgs_client
     ports:
       - 3000:3000

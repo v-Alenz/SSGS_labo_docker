@@ -48,8 +48,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: ./server
-          file: ./server/Dockerfile
+          context: ./docker_images/server
+          file: ./docker_images/server/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ssgs_labo_docker_server:latest
 
