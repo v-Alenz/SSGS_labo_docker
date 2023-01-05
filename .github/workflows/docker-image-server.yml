@@ -21,7 +21,7 @@
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-name: SSGS Labo Client
+name: SSGS Labo Server
 
 on:
   push:
