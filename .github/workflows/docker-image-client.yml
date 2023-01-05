@@ -55,4 +55,4 @@ jobs:
           context: .
           file: ./Client
           push: true
-          tags: ${{ secret.DOCKER_USERNAME }}/${{ DOCKER_HUB_REPOSITORY }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ DOCKER_HUB_REPOSITORY }}
